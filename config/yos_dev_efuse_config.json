@@ -1,0 +1,76 @@
+[
+    {
+        "name": "status",
+        "offset": "0x0000",
+        "length": 4,
+        "comments": "chip status",
+        "subitem": [
+            {
+                "name": "flash_key_status",
+                "offset": "0",
+                "length": 2,
+                "comments": "zero : key not written, non-zero : key written. "
+            },
+            {
+                "name": "data_key_status",
+                "offset": "2",
+                "length": 2,
+                "comments": "zero : key not written, non-zero : key written. "
+            },
+            {
+                "name": "hmac_key_status",
+                "offset": "4",
+                "length": 2,
+                "comments": "zero : key not written, non-zero : key written. "
+            },
+            {
+                "name": "app_key0_status",
+                "offset": "6",
+                "length": 2,
+                "comments": "zero : key not written, non-zero : key written. "
+            },
+            {
+                "name": "app_key1_status",
+                "offset": "8",
+                "length": 2,
+                "comments": "zero : key not written, non-zero : key written. "
+            },
+            {
+                "name": "swd_mode",
+                "offset": "10",
+                "length": 8,
+                "comments": "zero :  swd enabled , non-zero :  swd disabled"
+            },
+            {
+                "name": "reserved",
+                "offset": "18",
+                "length": 14,
+                "comments": ""
+            }
+        ]
+    },
+    {
+        "name": "app_status",
+        "offset": "0x0004",
+        "length": 8,
+        "comments": "user defined status"
+    },
+    {
+        "name": "fw_pub_key_hash",
+        "offset": "0x000C",
+        "length": 16,
+        "comments": "firmware signature public key hash"
+    },
+    {
+        "name": "app_key_hash",
+        "offset": "0x001C",
+        "length": 16,
+        "comments": "user used public key hash"
+    },
+    {
+        "name": "private_key",
+        "offset": "0x002C",
+        "length": 32,
+        "comments": ""
+    }
+]

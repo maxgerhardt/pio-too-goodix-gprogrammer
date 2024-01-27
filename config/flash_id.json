@@ -1,0 +1,350 @@
+[
+    {
+        "name": "w25q80bv",
+        "id": "1440ef",
+        "size": 1,
+        "unit": "M"
+    },
+    {
+        "name": "atmel at45db321d",
+        "id": "1271f",
+        "size": 4,
+        "unit": "M"
+    },
+    {
+        "name": "M25P32",
+        "id": "162020",
+        "size": 4,
+        "unit": "M"
+    },
+    {
+        "name": "GD25Q32C",
+        "id": "1640c8",
+        "size": 4,
+        "unit": "M"
+    },
+    {
+        "name": "EN25Q32B",
+        "id": "16301c",
+        "size": 4,
+        "unit": "M"
+    },
+    {
+        "name": "S25FL032A",
+        "id": "150201",
+        "size": 4,
+        "unit": "M"
+    },
+    {
+        "name": "W25Q64JVSSIQ",
+        "id": "C22017",
+        "size": 8,
+        "unit": "M"
+    },
+    {
+        "name": "W25Q128",
+        "id": "EF4018",
+        "size": 16,
+        "unit": "M"
+    },
+    {
+        "name": "C84014",
+        "id": "C84014",
+        "size": 1,
+        "unit": "M",
+        "eraseTime": "20s"
+    },
+    {
+        "name": "C84213",
+        "id": "C84213",
+        "size": 512,
+        "unit": "K",
+        "eraseTime": "6.5s"
+    },
+    {
+        "name": "C86010",
+        "id": "C86010",
+        "size": 64,
+        "unit": "K"
+    },
+    {
+        "name": "C86011",
+        "id": "C86011",
+        "size": 128,
+        "unit": "K"
+    },
+    {
+        "name": "C86012",
+        "id": "C86012",
+        "size": 256,
+        "unit": "K"
+    },
+    {
+        "name": "C86013",
+        "id": "C86013",
+        "size": 512,
+        "unit": "K"
+    },
+    {
+        "name": "C86014",
+        "id": "C86014",
+        "size": 1,
+        "unit": "M",
+        "eraseTime": "5s"
+    },
+    {
+        "name": "C86015",
+        "id": "C86015",
+        "size": 2,
+        "unit": "M"
+    },
+    {
+        "name": "C86016",
+        "id": "C86016",
+        "size": 4,
+        "unit": "M",
+        "eraseTime": "40s"
+    },
+    {
+        "name": "C86017",
+        "id": "C86017",
+        "size": 8,
+        "unit": "M",
+        "eraseTime": "60s"
+    },
+    {
+        "name": "C22534",
+        "id": "C22534",
+        "size": 1,
+        "unit": "M"
+    },
+    {
+        "name": "856010",
+        "id": "856010",
+        "size": 64,
+        "unit": "K"
+    },
+    {
+        "name": "856011",
+        "id": "856011",
+        "size": 128,
+        "unit": "K"
+    },
+    {
+        "name": "856012",
+        "id": "856012",
+        "size": 256,
+        "unit": "K"
+    },
+    {
+        "name": "856013",
+        "id": "856013",
+        "size": 512,
+        "unit": "K",
+        "eraseTime": "0.012s"
+    },
+    {
+        "name": "856014",
+        "id": "856014",
+        "size": 1,
+        "unit": "M",
+        "eraseTime": "0.02s"
+    },
+    {
+        "name": "856015",
+        "id": "856015",
+        "size": 2,
+        "unit": "M",
+        "eraseTime": "0.02s"
+    },
+    {
+        "name": "856016",
+        "id": "856016",
+        "size": 4,
+        "unit": "M",
+        "eraseTime": "0.02s"
+    },
+    {
+        "name": "856017",
+        "id": "856017",
+        "size": 8,
+        "unit": "M",
+        "eraseTime": "0.02s"
+    },
+    {
+        "name": "856018",
+        "id": "856018",
+        "size": 16,
+        "unit": "M",
+        "eraseTime": "0.8s"
+    },
+    {
+        "name": "EF6016",
+        "id": "EF6016",
+        "size": 4,
+        "unit": "M"
+    },
+    {
+        "name": "EF8016",
+        "id": "EF8016",
+        "size": 4,
+        "unit": "M"
+    },
+    {
+        "name": "C22811",
+        "id": "C22811",
+        "size": 128,
+        "unit": "K"
+    },
+    {
+        "name": "20BB18",
+        "id": "20BB18",
+        "size": 16,
+        "unit": "M"
+    },
+    {
+        "name": "BF2654",
+        "id": "BF2654",
+        "size": 512,
+        "unit": "K"
+    },
+    {
+        "name": "BF2658",
+        "id": "BF2658",
+        "size": 1,
+        "unit": "M"
+    },
+    {
+        "name": "XM25QU80B",
+        "id": "205014",
+        "size": 1,
+        "unit": "M",
+        "eraseTime": "15s"
+    },
+    {
+        "name": "XM25QH80B",
+        "id": "204014",
+        "size": 1,
+        "unit": "M",
+        "eraseTime": "10s"
+    },
+    {
+        "name": "XM25QU64A",
+        "id": "203817",
+        "size": 8,
+        "unit": "M",
+        "eraseTime": "100s"
+    },
+    {
+        "name": "XM25QH64A",
+        "id": "207017",
+        "size": 8,
+        "unit": "M",
+        "eraseTime": "100s"
+    },
+    {
+        "name": "XT25F64B",
+        "id": "0B4017",
+        "size": 8,
+        "unit": "M",
+        "eraseTime": "60s"
+    },
+    {
+        "name": "XT25F128B",
+        "id": "0B4018",
+        "size": 16,
+        "unit": "M",
+        "eraseTime": "90s"
+    },
+    {
+        "name": "XT25Q02D",
+        "id": "0B6012",
+        "size": 256,
+        "unit": "K",
+        "eraseTime": "10s"
+    },
+    {
+        "name": "XT25Q08B",
+        "id": "0B6014",
+        "size": 1,
+        "unit": "M",
+        "eraseTime": "20s"
+    },
+    {
+        "name": "XT25W64B",
+        "id": "0B6017",
+        "size": 8,
+        "unit": "M",
+        "eraseTime": "140s"
+    },
+    {
+        "name": "XT25Q128B",
+        "id": "0B6018",
+        "size": 16,
+        "unit": "M",
+        "eraseTime": "90s"
+    },
+    {
+        "name": "BY25Q64AS",
+        "id": "684017",
+        "size": 8,
+        "unit": "M",
+        "eraseTime": "60s"
+    },
+    {
+        "name": "BY25Q64AS",
+        "id": "684018",
+        "size": 16,
+        "unit": "M",
+        "eraseTime": "60s"
+    },
+    {
+        "name": "BY25D80A",
+        "id": "684014",
+        "size": 1,
+        "unit": "M",
+        "eraseTime": "20s"
+    },
+    {
+        "name": "QH128AH1G",
+        "id": "606060",
+        "size": 16,
+        "unit": "M",
+        "eraseTime": "60s"
+    },   
+    {
+        "name": "W25Q64JWIQJQ",
+        "id": "166017",
+        "size": 8,
+        "unit": "M",
+        "eraseTime": "100s"
+    },
+    {
+        "name": "W25Q64JWIMJM",
+        "id": "168017",
+        "size": 8,
+        "unit": "M",
+        "eraseTime": "100s"
+    },
+    {
+        "name": "XT25Q64D",
+        "id": "0B6017",
+        "size": 8,
+        "unit": "M",
+        "eraseTime": "50s"
+    },
+    {
+        "name": "W25Q64JVIQJQ",
+        "id": "164017",
+        "size": 8,
+        "unit": "M",
+        "eraseTime": "100s"
+    },
+    {
+        "name": "W25Q64JVIMJM",
+        "id": "167017",
+        "size": 8,
+        "unit": "M",
+        "eraseTime": "100s"
+    }
+]

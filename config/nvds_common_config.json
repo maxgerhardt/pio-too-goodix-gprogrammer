@@ -1,0 +1,10 @@
+{
+    "USER_Parameters": [
+        {
+            "tagmin":"0x4000",
+            "tagmax":"0x40FF"
+        }
+    ],
+    "ROM_Parameters": [
+    ]
+}

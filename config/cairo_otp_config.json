@@ -1,0 +1,483 @@
+[
+    {
+        "name": "Verify",
+        "offset": "0x1000",
+        "length": 8,
+        "display":0,
+        "comments": "",
+        "subitem": [
+            {
+                "name": "Pattern",
+                "offset": "0x00",
+                "length": 2,
+                "display":0,
+                "comments": "Goodix Pattern"
+            },
+            {
+                "name": "Item End",
+                "offset": "0x02",
+                "length": 2,
+                "display":0,
+                "comments": "Used Item End"
+            },
+            {
+                "name": "Check Sum",
+                "offset": "0x04",
+                "length": 4,
+                "display":0,
+                "comments": "Check_sum is 32bits of sum,\r\nincluding Production, Flash, RF, PWR, GPADC, Flash, Unused segments.\r\nAll fields in green will be added together(uint:32bit)"
+            }
+        ]
+    },
+    {
+        "name": "Production",
+        "offset": "0x1008",
+        "length": 24,
+        "display":1,
+        "comments": "",
+        "subitem": [
+            {
+                "name": "ATE Version",
+                "offset": "0x00",
+                "length": 2,
+                "display":1,
+                "comments": ""
+            },
+            {
+                "name": "HW Version",
+                "offset": "0x02",
+                "length": 2,
+                "display":1,
+                "comments": "Build code(hardware version).Encoded as ASCII.\r\nA0: 0x4130\r\nA1: 0x4131\r\nB0: 0x4230\r\nunspecified : 0xFFFF"
+            },
+            {
+                "name": "Chip ID",
+                "offset": "0x04",
+                "length": 2,
+                "display":1,
+                "comments": "Part code.\r\nGR5515:0x5515\r\nGR5526:0x5526\r\nGR5332:0x5332\r\nunspecified:0xFFFF"
+            },
+            {
+                "name": "Package",
+                "offset": "0x06",
+                "length": 2,
+                "display":1,
+                "comments": "Package option.\r\n0x0200: GR5332CENI (QFN48, 85°C 512K Flash)\r\n0x0201: GR5332CENE (QFN48, 105°C 512K Flash)\r\n0x0202: GR5332AENI (QFN32, 85°C 512K Flash)\r\n0x0203: GR5332AENE (QFN32, 105°C 512K Flash)\r\nunspecified: 0xFFFF"
+            },
+            {
+                "name": "Flash Size",
+                "offset": "0x08",
+                "length": 2,
+                "display":1,
+                "comments": "Flash variant.\r\n512 kByte flash ~ 0x200\r\n1 MByte flash ~ 0x400\r\nunspecified ~ 0xFFFF"
+            },
+            {
+                "name": "RAM Size",
+                "offset": "0x0A",
+                "length": 2,
+                "display":1,
+                "comments": "RAM variant.\r\n96 kByte RAM ~ 0x60, 80 kByte RAM ~ 0x50\r\nunspecified ~ 0xFFFF"
+            },
+            {
+                "name": "Unused",
+                "offset": "0x0C",
+                "length": 12,
+                "display":1,
+                "comments": "Reserved"
+            }
+        ]
+    },
+   
+    {
+        "name": "RF",
+        "offset": "0x1020",
+        "length": 4,
+        "display":0,
+        "comments": "",
+        "subitem": [
+            {
+                "name": "TX Power",
+                "offset": "0x00",
+                "length": 1,
+                "display":0,
+                "comments": "Power value for TX"
+            },
+            {
+                "name": "RSSI CALI",
+                "offset": "0x01",
+                "length": 1,
+                "display":0,
+                "comments": "Calibration value for RSSI"
+            },
+            {
+                "name": "HP Gain",
+                "offset": "0x02",
+                "length": 1,
+                "display":0,
+                "comments": "HP Gain offset for 2M"
+            },
+            {
+                "name": "Unused",
+                "offset": "0x03",
+                "length": 1,
+                "display":0,
+                "comments": "Reserved"
+            }
+        ]
+    },
+    {
+        "name": "PMU",
+        "offset": "0x1024",
+        "length": 16,
+        "display":0,
+        "comments": "",
+        "subitem": [
+            {
+                "name": "DCDC_1P05",
+                "offset": "0x00",
+                "length": 1,
+                "display":0,
+                "comments": "DCDC output 1.05V"
+            },
+            {
+                "name": "DCDC_1P15",
+                "offset": "0x01",
+                "length": 1,
+                "display":0,
+                "comments": "DCDC output 1.15V"
+            },
+            {
+                "name": "DIG_LDO_0P9",
+                "offset": "0x02",
+                "length": 1,
+                "display":0,
+                "comments": "Core LDO output 0.9V(Coarse)"
+            },
+            {
+                "name": "DIG_LDO_0P9_fine",
+                "offset": "0x03",
+                "length": 1,
+                "display":0,
+                "comments": "Core LDO output 0.9V(Fine)"
+            },
+            {
+                "name": "DIG_LDO_1P05",
+                "offset": "0x04",
+                "length": 1,
+                "display":0,
+                "comments": "Core LDO output 1.05V(Coarse)"
+            },
+            {
+                "name": "DIG_LDO_1P05_fine",
+                "offset": "0x05",
+                "length": 1,
+                "display":0,
+                "comments": "Core LDO output 1.05V(Fine)"
+            },
+            {
+                "name": "SYS_LDO_1P05",
+                "offset": "0x06",
+                "length": 1,
+                "display":0,
+                "comments": "System LDO output 1.05V"
+            },
+            {
+                "name": "SYS_LDO_1P15",
+                "offset": "0x07",
+                "length": 1,
+                "display":0,
+                "comments": "System LDO output 1.15V"
+            },
+            {
+                "name": "IO_LDO_1P8",
+                "offset": "0x08",
+                "length": 1,
+                "display":0,
+                "comments": "IO LDO output 1.8V"
+            },
+            {
+                "name": "IO_LDO_3P0",
+                "offset": "0x09",
+                "length": 1,
+                "display":0,
+                "comments": "IO LDO output 3.0V"
+            },
+            {
+                "name": "STB_IO_LDO_1P8",
+                "offset": "0x0A",
+                "length": 1,
+                "display":0,
+                "comments": "STB_IO LDO 1.8V"
+            },
+            {
+                "name": "STB_IO_LDO_3P0",
+                "offset": "0x0B",
+                "length": 1,
+                "display":0,
+                "comments": "STB_IO LDO 3.0V"
+            },
+            {
+                "name": "Unused",
+                "offset": "0x0C",
+                "length": 4,
+                "display":0,
+                "comments": "Reserved"
+            }
+        ]
+    },
+    {
+        "name": "ADC",
+        "offset": "0x1034",
+        "length": 24,
+        "display":0,
+        "comments": "",
+        "subitem": [
+            {
+                "name": "Offset Int 0P8",
+                "offset": "0x00",
+                "length": 2,
+                "display":0,
+                "comments": "Offset based on interanl reference(0.85V)"
+            },
+            {
+                "name": "Slope Int 0P8",
+                "offset": "0x02",
+                "length": 2,
+                "display":0,
+                "comments": "Slope based on interanl reference(0.85V)"
+            },
+            {
+                "name": "Offset Int 1P2",
+                "offset": "0x04",
+                "length": 2,
+                "display":0,
+                "comments": "Offset based on interanl reference(1.28V)"
+            },
+            {
+                "name": "Slope Int 1P2",
+                "offset": "0x06",
+                "length": 2,
+                "display":0,
+                "comments": "Slope based on interanl reference(1.28V)"
+            },
+            {
+                "name": "Offset Int 1P6",
+                "offset": "0x08",
+                "length": 2,
+                "display":0,
+                "comments": "Offset based on interanl reference(1.6V)"
+            }, 
+            {
+                "name": "Slope Int 1P6",
+                "offset": "0x0A",
+                "length": 2,
+                "display":0,
+                "comments": "Slope based on interanl reference(1.6V)"
+            },
+            {
+                "name": "Offset Int 1P0",
+                "offset": "0x0C",
+                "length": 2,
+                "display":0,
+                "comments": "Offset based on interanl reference(1.0V)"
+            },
+            {
+                "name": "Slope Int 1P0",
+                "offset": "0x0E",
+                "length": 2,
+                "display":0,
+                "comments": "Slope based on interanl reference(1.0V)"
+            },
+            {
+                "name": "Temp",
+                "offset": "0x10",
+                "length": 2,
+                "display":0,
+                "comments": ""
+            },
+            {
+                "name": "Temp_ref",
+                "offset": "0x12",
+                "length": 2,
+                "display":0,
+                "comments": "Chip temperature sensor reference temperature"
+            },
+            {
+                "name": "Unused",
+                "offset": "0x14",
+                "length": 4,
+                "display":0,
+                "comments": "Reserved"
+            }
+        ]
+    },
+    {
+        "name": "Clock",
+        "offset": "0x104C",
+        "length": 8,
+        "display":0,
+        "comments": "",
+        "subitem": [
+            {
+                "name": "HF_OSC_192M",
+                "offset": "0x00",
+                "length": 2,
+                "display":0,
+                "comments": "HF_OSC output 192M clock(Coarse)"
+            },
+            {
+                "name": "HF_OSC_192M_fine",
+                "offset": "0x02",
+                "length": 2,
+                "display":0,
+                "comments": "HF_OSC output 192M clock(Fine)"
+            },
+            {
+                "name": "Unused",
+                "offset": "0x04",
+                "length": 4,
+                "display":0,
+                "comments": "Reserved"
+            }
+        ]
+    },
+    {
+        "name": "Flash",
+        "offset": "0x1054",
+        "length": 12,
+        "display":0,
+        "comments": "",
+        "subitem":[
+            {
+                "name": "Manufacturer",
+                "offset": "0x00",
+                "length": 1,
+                "display":0,
+                "comments": "Flash Manufacturer Type\r\nPUYA: P25Q40SU ~ 0x11\r\nPUYA: P25Q80SU ~ 0x12\r\nXTX: XT25Q08B ~ 0x21"
+            },
+            {
+                "name": "Features",
+                "offset": "0x01",
+                "length": 1,
+                "display":0,
+                "comments": "Flash Feature Type\r\n0bit: 1 ~ support 512byte write, 0 ~ not support 512 byte write"
+            },
+            {
+                "name": "tVSL",
+                "offset": "0x02",
+                "length": 1,
+                "display":0,
+                "comments": "VCC(min.) to device operation. Uint: 10us\r\nunspecified ~ 0xFF"
+            },
+            {
+                "name": "tESL",
+                "offset": "0x03",
+                "length": 1,
+                "display":0,
+                "comments": "Erase suspend latency. Uint: 5us\r\nunspecified ~ 0xFF"
+            },
+            {
+                "name": "tPSL",
+                "offset": "0x04",
+                "length": 1,
+                "display":0,
+                "comments": "Program suspend latency. Uint: 5us\r\nunspecified ~ 0xFF"
+            },
+            {
+                "name": "tPRS",
+                "offset": "0x05",
+                "length": 1,
+                "display":0,
+                "comments": "Latency between program resume and next suspend. Uint: 5us\r\nunspecified ~ 0xFF"
+            },
+            {
+                "name": "tERS",
+                "offset": "0x06",
+                "length": 1,
+                "display":0,
+                "comments": "Latency between erase resume and next suspend. Uint: 5us\r\nunspecified ~ 0xFF"
+            },
+            {
+                "name": "tDP",
+                "offset": "0x07",
+                "length": 1,
+                "display":0,
+                "comments": "CS# High to Deep Power-down Mode. Uint: 5us\r\nunspecified ~ 0xFF"
+            },
+            {
+                "name": "tRES2",
+                "offset": "0x08",
+                "length": 1,
+                "display":0,
+                "comments": "CS# High To Standby Mode Without Electronic Signature Read. Uint: 5us\r\nunspecified ~ 0xFF"
+            },
+            {
+                "name": "tRDINT",
+                "offset": "0x09",
+                "length": 1,
+                "display":0,
+                "comments": "Read status register interval after write opertion. Uint: 5us\r\nunspecified ~ 0xFF"
+            },
+            {
+                "name": "Unused",
+                "offset": "0x0A",
+                "length": 2,
+                "display":0,
+                "comments": "Reserved"
+            }
+        ]
+    },
+    {
+        "name": "BLE/RF",
+        "offset": "0x2000",
+        "length": 32,
+        "display":1,
+        "comments": "",
+        "subitem": [
+            {
+                "name": "BT_ADDR",
+                "offset": "0x00",
+                "length": 6,
+                "display":1,
+                "comments": ""
+            },
+            {
+                "name": "XO_32M",
+                "offset": "0x06",
+                "length": 2,
+                "display":1,
+                "comments": ""
+            },
+            {
+                "name": "Unused",
+                "offset": "0x08",
+                "length": 24,
+                "display":0,
+                "comments": "Reserved for Goodix firmware design"
+            }
+        ]
+    },
+    {
+        "name": "USER",
+        "offset": "0x2020",
+        "length": 224,
+        "display":0,
+        "comments": "",
+        "subitem": [
+            {
+                "name": "User_Start",
+                "offset": "0x0",
+                "length": 224,
+                "display":0,
+                "comments": "Reserved for customer"
+            },
+            {
+                "name": "User_End",
+                "offset": "0xE0",
+                "length": 0,
+                "display":0,
+                "comments": "Reserved for customer"
+            }
+        ]
+    }
+]

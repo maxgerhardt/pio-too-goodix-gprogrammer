@@ -1,0 +1,50 @@
+{
+    "USER_Parameters": [],
+    "ROM_Parameters": [
+        {
+            "id": "0xC001",
+            "name": "BD_ADDRESS",
+            "length": 6,
+            "desc": "Device Address",
+            "type": "address",
+            "value": "01:23:45:67:89:AB",
+            "format": "address"
+        },
+        {
+            "id": "0xC002",
+            "name": "DEVICE_NAME",
+            "length": 4,
+            "desc": "Device Name",
+            "type": "variable",
+            "value": "name",
+            "format": "ascii"
+        },
+        {
+            "id": "0xC007",
+            "name": "LPCLK_DRIFT",
+            "length": 2,
+            "desc": "Sleep Clock Accuracy",
+            "type": "unsignedint",
+            "value": "500",
+            "format": "dec"
+        },
+        {
+            "id": "0xC085",
+            "name": "CODED_PHY_500",
+            "length": 1,
+            "desc": "Prefer LE Coded PHY 500K",
+            "type": "unsignedint",
+            "value": "0x00",
+            "format": "hex"
+        },
+        {
+            "id": "0xC0B1",
+            "name": "RF_XO_OFFSET",
+            "length": 2,
+            "desc": "XO offset",
+            "type": "unsignedint",
+            "value": "0x0100",
+            "format": "hex"
+        }
+    ]
+}

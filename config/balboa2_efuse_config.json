@@ -1,0 +1,385 @@
+[
+    {
+        "name": "Product ID",
+        "offset": "0x015E",
+        "length": 2,
+        "comments": "product identity"
+    },
+    {
+        "name": "Chip ID",
+        "offset": "0x0158",
+        "length": 6,
+        "comments": "chip identity, user define"
+    },
+    {
+        "name": "EncMode",
+        "offset": "0x0152",
+        "length": 2,
+        "comments": "encrypted or not"
+    },
+    {
+        "name": "SWDDisable",
+        "offset": "0x0150",
+        "length": 2,
+        "comments": "enable SWD or not"
+    },
+    {
+        "name": "Config",
+        "offset": "0x014C",
+        "length": 4,
+        "comments": "chip configuration",
+        "subitem": [
+            {
+                "name": "isp_uart_bypass",
+                "offset": "0",
+                "length": 1,
+                "comments": "1: Not Support UART ISP Process, 0: Support UART ISP Process"
+            },
+            {
+                "name": "isp_usb_bypass",
+                "offset": "1",
+                "length": 1,
+                "comments": "1;Not Support USB ISP Process, 0: Support USB ISP Process"
+            },
+            {
+                "name": "isp_jlink_bypass",
+                "offset": "2",
+                "length": 1,
+                "comments": "1: Not Support JLINK ISP Process, 0: Support JLINK ISP Process"
+            },
+            {
+                "name": "enc_boot_system_clk",
+                "offset": "3",
+                "length": 3,
+                "comments": "0: XO-16M, 1: PLL-64M, 2: PLL-96M, 3: PLL-48M, 4: PLL-24M, 5: PLL-16M, 6: PLL-32M"
+            },
+            {
+                "name": "enc_boot_flash_clk",
+                "offset": "6",
+                "length": 3,
+                "comments": "0: 16MHz, 1: 48MHz, 2: 32MHz, 3: 24MHz, 4:64MHz"
+            },
+            {
+                "name": "enc_boot_xip_read_cmd",
+                "offset": "9",
+                "length": 8,
+                "comments": ""
+            },
+            {
+                "name": "memory_power_size",
+                "offset": "17",
+                "length": 2,
+                "comments": "0: 256KB, 1: 192KB, 2: 128KB"
+            }
+        ]
+    },
+    {
+        "name": "RF",
+        "offset": "0x0148",
+        "length": 4,
+        "comments": "",
+        "subitem": [
+            {
+                "name": "TX Power",
+                "offset": "0",
+                "length": 8,
+                "comments": ""
+            },
+            {
+                "name": "RSSI CALI",
+                "offset": "8",
+                "length": 8,
+                "comments": ""
+            },
+            {
+                "name": "HP Gain_2M_offset",
+                "offset": "16",
+                "length": 8,
+                "comments": ""
+            },
+            {
+                "name": "Reserved",
+                "offset": "24",
+                "length": 8,
+                "comments": ""
+            }
+        ]
+    },
+    {
+        "name": "Reserved",
+        "offset": "0x0144",
+        "length": 4,
+        "comments": ""
+    },
+    {
+        "name": "STB_IO_LDO_3P0",
+        "offset": "0x0143",
+        "length": 1,
+        "comments": "STB IO LDO 3V"
+    },
+    {
+        "name": "STB_IO_LDO_1P8",
+        "offset": "0x0142",
+        "length": 1,
+        "comments": "STB IO LDO 1.8V"
+    },
+    {
+        "name": "IO_LDO_3P0",
+        "offset": "0x0141",
+        "length": 1,
+        "comments": "IO LDO output 3.0V"
+    },
+    {
+        "name": "IO_LDO_1P8",
+        "offset": "0x0140",
+        "length": 1,
+        "comments": "IO LDO output 1.8V"
+    },
+    {
+        "name": "Dig_LDO_1P05",
+        "offset": "0x013F",
+        "length": 1,
+        "comments": ""
+    },
+    {
+        "name": "Dig_LDO_0P9",
+        "offset": "0x013E",
+        "length": 1,
+        "comments": ""
+    },
+    {
+        "name": "DCDC_VOUT_1P15",
+        "offset": "0x013D",
+        "length": 1,
+        "comments": "DCDC output 1.15V calibration value"
+    },
+    {
+        "name": "DCDC_VOUT_1P05",
+        "offset": "0x013C",
+        "length": 1,
+        "comments": "DCDC output 1.05V calibration value"
+    },
+    {
+        "name": "Reserved",
+        "offset": "0x013A",
+        "length": 2,
+        "comments": ""
+    },
+    {
+        "name": "RAM Size",
+        "offset": "0x0138",
+        "length": 2,
+        "comments": "512KB: 0x0200, 256KB: 0x0100, 192KB: 0x00C0, 128KB: 0x0080"
+    },
+    {
+        "name": "Flash Size",
+        "offset": "0x0136",
+        "length": 2,
+        "comments": "1024KB: 0x0400, 512KB: 0x0200"
+    },
+    {
+        "name": "Package Type",
+        "offset": "0x0134",
+        "length": 2,
+        "comments": "0:Unused,  0x1000: BGA55, 0x2000: QFN56, 0x2100: QFN68"
+    },    
+    {
+        "name": "Chip ID",
+        "offset": "0x0132",
+        "length": 2,
+        "comments": "GR5515: 0x5515, GR5526: 0x5526, GR5332: 0x5332, GR5525: 0x5525, unspecified: 0x0000"
+    },
+    {
+        "name": "HW Version",
+        "offset": "0x0130",
+        "length": 2,
+        "comments": "A0 : 0x4130, A1 : 0x4131, B0 : 0x4230, unspecified : 0x0000"
+    },
+    {
+        "name": "Trim_Sum",
+        "offset": "0x012E",
+        "length": 2,
+        "comments": ""
+    },
+    {
+        "name": "Pattern",
+        "offset": "0x012C",
+        "length": 2,
+        "comments": ""
+    },
+    {
+        "name": "XO",
+        "offset": "0x012A",
+        "length": 2,
+        "comments": "xo offset"
+    },
+    {
+        "name": "BT_ADDR",
+        "offset": "0x0124",
+        "length": 6,
+        "comments": ""
+    },
+    {
+        "name": "IO_LDO_SEL",
+        "offset": "0x0123",
+        "length": 1,
+        "comments": "",
+        "subitem": [
+            {
+                "name": "IO_LDO selector",
+                "offset": "0",
+                "length": 1,
+                "comments": "0: 1.8v, 1: 3.3v"
+            },
+            {
+                "name": "IO_LDO_Bypass",
+                "offset": "1",
+                "length": 1,
+                "comments": "0: no bypass, 1: bypass"
+            }
+        ]
+    },
+    {
+        "name": "Reserved",
+        "offset": "0x0121",
+        "length": 2,
+        "comments": ""
+    },
+    {
+        "name": "ATE_PROG_VER",
+        "offset": "0x0120",
+        "length": 1,
+        "comments": ""
+    },
+    {
+        "name": "Chip UID",
+        "offset": "0x0110",
+        "length": 16,
+        "comments": ""
+    },
+    {
+        "name": "Reserved",
+        "offset": "0x0040",
+        "length": 28,
+        "comments": ""
+    },
+    {
+        "name": "Slope_Int_No2",
+        "offset": "0x003E",
+        "length": 2,
+        "comments": "Reserved"
+    },
+    {
+        "name": "Slope_Int_No1",
+        "offset": "0x003C",
+        "length": 2,
+        "comments": "Reserved"
+    },
+    {
+        "name": "Flash_tRDINT",
+        "offset": "0x003B",
+        "length": 1,
+        "comments": ""
+    },
+    {
+        "name": "Flash_tRES2",
+        "offset": "0x003A",
+        "length": 1,
+        "comments": ""
+    },
+    {
+        "name": "Flash_tDP",
+        "offset": "0x0039",
+        "length": 1,
+        "comments": ""
+    },
+    {
+        "name": "Flash_tERS",
+        "offset": "0x0038",
+        "length": 1,
+        "comments": ""
+    },
+    {
+        "name": "Flash_tPRS",
+        "offset": "0x0037",
+        "length": 1,
+        "comments": ""
+    },
+    {
+        "name": "Flash_tPSL",
+        "offset": "0x0036",
+        "length": 1,
+        "comments": ""
+    },
+    {
+        "name": "Flash_tESL",
+        "offset": "0x0035",
+        "length": 1,
+        "comments": ""
+    },
+    {
+        "name": "Flash_tVSL",
+        "offset": "0x0034",
+        "length": 1,
+        "comments": ""
+    },{
+        "name": "Temp_ref",
+        "offset": "0x0032",
+        "length": 2,
+        "comments": "Chip temperature sensor reference temperature"
+    },
+    {
+        "name": "Temp",
+        "offset": "0x0030",
+        "length": 2,
+        "comments": ""
+    },
+    {
+        "name": "Slope_Ext_1P0",
+        "offset": "0x002E",
+        "length": 2,
+        "comments": "Slope based on external reference(1.0V) "
+    },
+    {
+        "name": "Offset_Ext_1P0",
+        "offset": "0x002C",
+        "length": 2,
+        "comments": "Offset based on external reference(1.0V) "
+    },
+    {
+        "name": "Slope_Int_1P6",
+        "offset": "0x002A",
+        "length": 2,
+        "comments": "Slope based on interanl reference(1.6V)"
+    },
+    {
+        "name": "Offset_Int_1P6",
+        "offset": "0x0028",
+        "length": 2,
+        "comments": "Offset based on interanl reference(1.6V) "
+    },
+    {
+        "name": "Slope_Int_1P2",
+        "offset": "0x0026",
+        "length": 2,
+        "comments": "Slope based on interanl reference(1.28V) "
+    },
+    {
+        "name": "Offset_Int_1P2",
+        "offset": "0x0024",
+        "length": 2,
+        "comments": "Offset based on interanl reference(1.28V) "
+    },
+    {
+        "name": "Slope_Int_0P8",
+        "offset": "0x0022",
+        "length": 2,
+        "comments": "Slope based on interanl reference(0.85V) "
+    },
+    {
+        "name": "Offset_Int_0P8",
+        "offset": "0x0020",
+        "length": 2,
+        "comments": "Offset based on interanl reference(0.85V) "
+    }
+]

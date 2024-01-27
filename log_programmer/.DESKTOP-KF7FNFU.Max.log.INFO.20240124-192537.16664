@@ -1,0 +1,15 @@
+Log file created at: 2024/01/24 19:25:37
+Running on machine: DESKTOP-KF7FNFU
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0124 19:25:37.851179 12520 main.cpp:75] console version:1.2.36.0304
+I0124 19:25:37.859932  1908 cjLinkAgency.cpp:92] update Agency,product type: 5
+I0124 19:25:37.859932  1908 cjLinkAgency.cpp:124] base operate Agency
+I0124 19:25:37.859932  1908 ServiceHandler.cpp:32] Hello Balboa thrift
+I0124 19:25:37.860448  1908 cthriftserver.cpp:191] finish create parameter for server.
+I0124 19:25:37.860967  1908 cthriftserver.cpp:195] finish create server
+I0124 19:25:37.860967  1908 cthriftserver.cpp:197] RPC Port = 8000
+I0124 19:25:37.956853  1908 ServiceHandler.cpp:651] called setFlashSize: startaddr:16777216 size:1024
+I0124 19:25:37.957369  1908 ServiceHandler.cpp:653] product type: 0
+I0124 19:25:37.957369  1908 cjLinkAgency.cpp:92] update Agency,product type: 0
+I0124 19:25:37.957369  1908 cjLinkAgency.cpp:104] update Agency:0
+I0124 19:42:49.040032  1908 ServiceHandler.cpp:732] quit!
