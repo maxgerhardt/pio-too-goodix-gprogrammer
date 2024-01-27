@@ -1,3 +1,0 @@
-..\GR5xxx_encrypt_signature.exe --operation="encryptandsign" --firmware_key="eFuse/firmware.key" --signature_key="eFuse/sign.key" --signature_pub_key="eFuse/sign_pub.key" --product_json_path="eFuse/product.json" --ori_firmware="firmware_origin.bin" --output="firmware_encryptAndSign/firmware_encryptAndSign.bin" --random_output="firmware_encryptAndSign/random.bin" --base_addr="0x01000000" --flash_size="1024" --product_type="0"
-
-pause

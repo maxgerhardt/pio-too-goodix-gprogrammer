@@ -1,7 +1,0 @@
-Log file created at: 2024/01/26 10:56:38
-Running on machine: DESKTOP-KF7FNFU
-Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
-I0126 10:56:38.360749 14352 main.cpp:75] console version:1.2.36.0304
-I0126 10:56:38.369573 14352 cjLinkAgency.cpp:92] update Agency,product type: 5
-I0126 10:56:38.369573 14352 cjLinkAgency.cpp:124] base operate Agency
-I0126 10:56:38.369573 14352 cmdlineserver.cpp:2022] Programmer start

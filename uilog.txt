@@ -1,3 +1,0 @@
-Wed Jan 24 2024 19:25:37 GMT+0100 (Mitteleuropäische Zeit)Enter startConsole
-Wed Jan 24 2024 19:25:37 GMT+0100 (Mitteleuropäische Zeit)startConsole stdout string:RPC Port = 8000
-
